@@ -1,0 +1,46 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.2 -x 192.168.50.3
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13696
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 5914fbece8007d820100000069a510e2d48bfd028b9479fd (good)
+;; QUESTION SECTION:
+;3.50.168.192.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+3.50.168.192.in-addr.arpa. 604800 IN	PTR	maestro.empresa.local.
+
+;; Query time: 0 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2) (UDP)
+;; WHEN: Mon Mar 02 04:24:02 UTC 2026
+;; MSG SIZE  rcvd: 117
+
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.2 -x 192.168.50.2
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7231
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: a0c9cea5b56458d10100000069a510eb69ad202fa4807536 (good)
+;; QUESTION SECTION:
+;2.50.168.192.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+2.50.168.192.in-addr.arpa. 604800 IN	PTR	esclavo.empresa.local.
+
+;; Query time: 4 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2) (UDP)
+;; WHEN: Mon Mar 02 04:24:11 UTC 2026
+;; MSG SIZE  rcvd: 117
+

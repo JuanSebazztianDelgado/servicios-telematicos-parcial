@@ -1,0 +1,28 @@
+$TTL 604800
+@       IN  SOA  maestro.empresa.local. admin.empresa.local. (
+                2026030302 ; Serial → formato AAAAMMDDNN
+                3600       ; Refresh (1 hora)
+                900        ; Retry (15 min)
+                604800     ; Expire (7 días)
+                86400 )    ; Negative Cache TTL (1 día)
+;
+
+@   IN  NS  maestro.empresa.local.
+@   IN  NS  esclavo.empresa.local.
+;
+
+; —— Registros A (IPv4) ————————————————
+maestro    IN  A     192.168.50.3
+esclavo    IN  A     192.168.50.2
+www        IN  A     192.168.50.3
+servidor   IN  A     192.168.50.3
+nuevo      IN  A     192.168.50.10
+;
+
+; —— Registro AAAA (IPv6) ————————————————
+maestro    IN  AAAA  ::1
+;
+
+; —— Registro CNAME ————————————————
+web        IN  CNAME www.empresa.local.
+ftp        IN  CNAME www.empresa.local.

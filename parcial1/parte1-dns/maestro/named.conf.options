@@ -1,0 +1,19 @@
+options {
+
+    directory "/var/cache/bind";
+
+    # SEGURIDAD: deshabilitar recursión (evitar open resolver)
+    recursion no;
+
+    # Solo el esclavo puede transferir zonas (AXFR)
+    allow-transfer { 192.168.50.2; };
+
+    # Notificar al esclavo cuando haya cambios
+    notify yes;
+
+    # Escuchar solo en la IP del servidor
+    listen-on { 192.168.50.3; 127.0.0.1; };
+    listen-on-v6 { any; };
+
+    dnssec-validation auto;
+};

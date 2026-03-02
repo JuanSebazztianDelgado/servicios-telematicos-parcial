@@ -1,0 +1,10 @@
+# Archivo de configuración del DNS Esclavo (VM cliente - 192.168.50.2)
+# Copiado manualmente como evidencia
+
+options {
+    directory "/var/cache/bind";
+    recursion no;
+    allow-transfer { none; };
+    listen-on { 192.168.50.2; 127.0.0.1; };
+    dnssec-validation auto;
+};

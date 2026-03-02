@@ -1,0 +1,76 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.2 www.empresa.local
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; WARNING: .local is reserved for Multicast DNS
+;; You are currently testing what happens when an mDNS query is leaked to DNS
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1781
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f7f877a31597ed740100000069a510ac8fffc7a303d15a73 (good)
+;; QUESTION SECTION:
+;www.empresa.local.		IN	A
+
+;; ANSWER SECTION:
+www.empresa.local.	604800	IN	A	192.168.50.3
+
+;; Query time: 0 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2) (UDP)
+;; WHEN: Mon Mar 02 04:23:08 UTC 2026
+;; MSG SIZE  rcvd: 90
+
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.2 web.empresa.local
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; WARNING: .local is reserved for Multicast DNS
+;; You are currently testing what happens when an mDNS query is leaked to DNS
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 54892
+;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: a3be6c68f64bf53d0100000069a510b649cdd32ab16d416a (good)
+;; QUESTION SECTION:
+;web.empresa.local.		IN	A
+
+;; ANSWER SECTION:
+web.empresa.local.	604800	IN	CNAME	www.empresa.local.
+www.empresa.local.	604800	IN	A	192.168.50.3
+
+;; Query time: 0 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2) (UDP)
+;; WHEN: Mon Mar 02 04:23:18 UTC 2026
+;; MSG SIZE  rcvd: 108
+
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.2 maestro.empresa.local AAAA
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; WARNING: .local is reserved for Multicast DNS
+;; You are currently testing what happens when an mDNS query is leaked to DNS
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 54502
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: b51cc533cbc4d53f0100000069a510d9e5c8f946dec5cb2b (good)
+;; QUESTION SECTION:
+;maestro.empresa.local.		IN	AAAA
+
+;; ANSWER SECTION:
+maestro.empresa.local.	604800	IN	AAAA	::1
+
+;; Query time: 0 msec
+;; SERVER: 192.168.50.2#53(192.168.50.2) (UDP)
+;; WHEN: Mon Mar 02 04:23:53 UTC 2026
+;; MSG SIZE  rcvd: 106
+

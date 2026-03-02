@@ -1,0 +1,20 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.2-Ubuntu <<>> @192.168.50.3 google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: REFUSED, id: 64743
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 0423ec67f20d88620100000069a510f45a756d7d0318d1e7 (good)
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; Query time: 0 msec
+;; SERVER: 192.168.50.3#53(192.168.50.3) (UDP)
+;; WHEN: Mon Mar 02 04:24:20 UTC 2026
+;; MSG SIZE  rcvd: 67
+

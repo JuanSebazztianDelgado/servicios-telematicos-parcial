@@ -1,0 +1,16 @@
+$TTL    604800
+@       IN  SOA  maestro.empresa.local. admin.empresa.local. (
+                        2026030301 ; Serial
+                        3600
+                        900
+                        604800
+                        86400 )
+
+;
+@   IN  NS  maestro.empresa.local.
+
+;
+; PTR = resolución inversa (IP → nombre)
+; Solo el último octeto de la IP
+3   IN  PTR  maestro.empresa.local.
+2   IN  PTR  esclavo.empresa.local.
